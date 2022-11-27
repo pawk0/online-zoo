@@ -241,12 +241,12 @@ ul li {
     padding-bottom: 80px;
 }
 
-.centered {
+.p-f-centered {
     display: flex;
     justify-content: center;
 }
 
-.pick-and-feed .centered {
+.pick-and-feed .p-f-centered {
     padding-top: 60px;
 }
 
@@ -397,26 +397,6 @@ footer {
     color: #FFFFFF;
 }
 
-
-.email {
-    width: 228px;
-    height: 42px;
-
-    color: #BDBDBD;
-
-    border: 0.7px solid orange;
-    border-radius: 2px;
-}
-
-.email:active {
-    border: 0.7px solid var(--Green);
-}
-
-.email:invalid {
-    border: 0.7px solid var(--Rad);
-    color: var(--Rad);
-}
-
 .another-amount { /*TODO: dollar icon inside input */
     width: 268px;
     height: 54px;
@@ -435,19 +415,6 @@ footer {
 .another-amount:invalid {
     color: var(--Rad);
     border: 1px solid var(--Rad);
-}
-
-.arrow-elips { /*TODO: arrow icons inside */
-    width: 62px;
-    height: 62px;
-    background: var(--Orange);
-    border: 0;
-    border-radius: 50%;
-    color: #FFF;
-}
-
-.arrow-elips:active {
-    background: var(--Green);
 }
 
 .plus-minus { /*TODO: + icon inside input */

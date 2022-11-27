@@ -32,10 +32,20 @@ body {
     font-size: 16px;
     line-height: 140%;
     color: var(--main_text_color);
+
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+body::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
 
 h1, h2, h3, h4, ul, li {
     margin: 0;
+    padding: 0;
 }
 
 
@@ -83,6 +93,29 @@ h4 {
     line-height: 120%;
 }
 
+ul li {
+    list-style: none;
+}
+
+.email {
+    width: 228px;
+    height: 42px;
+
+    color: #BDBDBD;
+
+    border: 0.7px solid orange;
+    border-radius: 2px;
+}
+
+.email:active {
+    border: 0.7px solid var(--Green);
+}
+
+.email:invalid {
+    border: 0.7px solid var(--Rad);
+    color: var(--Rad);
+}
+
 .btn, .button {
     font-style: normal;
     font-weight: 500;
@@ -96,7 +129,8 @@ h4 {
     background: var(--Orange);
     color: #FFFFFF;
     width: 298px;
-    height: 54px;
+    padding: 16px;
+    white-space: nowrap;
 }
 
 .button-rounded {
@@ -123,23 +157,29 @@ h4 {
 
 .submit-button {
     width: 129px;
-    height: 42px;
 
     color: #000;
     background: var(--Light_gray);
 
     border: 1px solid var(--Black_blue);
     border-radius: 5px;
+
+    padding: 10px;
 }
 
-.submit-button:active {
+.submit-button:active, .submit-button:hover {
     color: var(--Green);
     border: 1px solid var(--Green);
+    cursor: pointer;
 }
 
 .submit-button:invalid {
     color: var(--Rad);
     border: 1px solid var(--Rad);
+}
+
+.logo-outer{
+    display: inline-block;
 }
 
 
@@ -181,4 +221,21 @@ h4 {
 
 .social-logo:hover {
     filter: invert(34%) sepia(90%) saturate(1376%) hue-rotate(62deg) brightness(100%) contrast(102%);
+}
+
+.arrow-elips {
+    width: 62px;
+    height: 62px;
+    background: var(--Orange);
+    border: 0;
+    border-radius: 50%;
+    color: #FFF;
+}
+
+.arrow-elips:active {
+    background: var(--Green);
+}
+.arrow-elips:hover {
+    cursor: pointer;
+    background: var(--button_hover);
 }

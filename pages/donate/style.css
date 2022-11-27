@@ -67,7 +67,7 @@ ul li {
     text-decoration-color: orange;
 }
 
-.centered {
+.p-f-centered {
     display: flex;
     justify-content: center;
 }
